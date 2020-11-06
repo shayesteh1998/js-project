@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<style>
+		.small
+		{
+			width : 200px;
+			height : 200px;
+			margin-left : 20px;
+		}
+		
+		#mask
+		{
+			display : none;
+			width : 100%;
+			height : 100%;
+			position : absolute;
+			z-index : 999;
+			background-color : black;
+			opacity : 0.6;
+			left : 0px;
+			top : 0px;
+			
+		}
+		</style>
+		
+	</head>
+	<body>
+		<img src="Desert.jpg" class="small" onclick="showOriginal(this)" />
+		<img src="Koala.jpg" class="small" onclick="showOriginal(this)" />
+		<img src="Tulips.jpg" class="small" onclick="showOriginal(this)" />
+		<div id="mask" onclick="hidePhoto()">
+		</div>
+	</body>
+</html>
